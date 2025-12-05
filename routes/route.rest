@@ -1,0 +1,35 @@
+GET http://localhost:3000/users/
+
+###
+
+GET http://localhost:3000/users/user1/
+
+###
+DELETE http://localhost:3000/users/user1/
+
+###
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "userName" : "user3",
+    "email" : "user3@gamil.com",
+    "password" : "TestPass123",
+    "confirmPassword": "TestPass123"
+}
+
+
+
+
+
+
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "userName" : "user2",
+    "password" : "TestPAss123"
+}
